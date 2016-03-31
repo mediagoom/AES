@@ -7,6 +7,7 @@
       'dependencies': [
       ],
       'defines': [
+      	'USE_INTEL_AES_IF_PRESENT',
       ],
       'include_dirs': [
       	 '..\..\..\BITBUCKET\WebTv\Foundation.Media.Open\include'

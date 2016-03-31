@@ -24,6 +24,8 @@ Issue Date: 09/09/2014
 #if defined(_MSC_VER)
 
 #include <intrin.h>
+#include <wmmintrin.h>
+
 #pragma intrinsic(__cpuid)
 #define INLINE  __inline
 
