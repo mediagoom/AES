@@ -3,14 +3,18 @@
   'targets': [
     {
       'target_name': 'gypaes',
-      'type': '<(component)',
-      'dependencies': [
+      'type': '<(component)'
+	  , 'direct_dependent_settings': {
+            'include_dirs': [ './' ]
+			, 'defines' : ['AES']
+			}
+    , 'dependencies': [
       ],
       'defines': [
       ],
-      'include_dirs': [
-      	 '..\..\..\BITBUCKET\WebTv\Foundation.Media.Open\include'
-      ],
+      #'include_dirs': [
+      #	 '..\..\..\BITBUCKET\WebTv\Foundation.Media.Open\include'
+      #],
       'sources': [
 	  'aes_modes.c'
 	, 'aes_ni.c'
