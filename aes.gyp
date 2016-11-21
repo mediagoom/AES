@@ -6,15 +6,12 @@
       'type': '<(component)'
 	  , 'direct_dependent_settings': {
             'include_dirs': [ './' ]
-			, 'defines' : ['AES']
+			, 'defines' : ['HAVE_LIBGYPAES']
 			}
     , 'dependencies': [
       ],
       'defines': [
       ],
-      #'include_dirs': [
-      #	 '..\..\..\BITBUCKET\WebTv\Foundation.Media.Open\include'
-      #],
       'sources': [
 	  'aes_modes.c'
 	, 'aes_ni.c'

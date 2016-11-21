@@ -23,6 +23,17 @@ $(headers): $(prefix)/include/%: $(hdir)/%
 
 install: $(binaries) $(headers) 
 
+uninstall: 
+	rm $(binaries)
+	rm $(headers)
+
+clean:
+	rm aes.Makefile
+	rm -rf build
+	rm config.mk
+	rm gypaes.target.mk
+
+
 #$(directories)
 
 # $(directories), uninstall, clean, .PHONY, etc.
