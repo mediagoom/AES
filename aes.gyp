@@ -1,5 +1,5 @@
 {
-  'includes': ['common.gypi'],
+  'includes': ['config.gypi'],
   'targets': [
     {
       'target_name': 'gypaes',
