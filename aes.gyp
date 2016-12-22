@@ -2,8 +2,8 @@
   'includes': ['config.gypi'],
   'targets': [
     {
-      'target_name': 'gypaes',
-      'type': '<(component)'
+        'target_name': 'gypaes'
+      , 'type': 'static_library'
 	  , 'direct_dependent_settings': {
             'include_dirs': [ './' ]
 			, 'defines' : ['HAVE_LIBGYPAES']
