@@ -22,7 +22,6 @@ Makefile
 Makefile.in
 aclocal.m4
 /autom4te.cache/**/*
-config.mk
 compile
 configure
 depcomp
@@ -30,14 +29,20 @@ install-sh
 missing
 COPYING
 INSTALL
-								
+/tmp*
+
+
 #generated files
-*.sln
 *.vcxproj
 *.vcxproj.filters
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 *.vc.db
+
+# gyp generated
+*.sln
+*.vcproj
+*.rules
 
 # Build results
 [Dd]ebug/
@@ -49,7 +54,6 @@ x86/
 bld/
 [Bb]in/
 [Oo]bj/
-build/
 
 # Visual Studio 2015 cache/options directory
 .vs/
